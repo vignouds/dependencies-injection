@@ -18,7 +18,7 @@ export class FormationListComponent implements OnInit {
   constructor(private formationService:FormationService) { }
 
   ngOnInit() {
-    this.formations = this.formationService.getFormation().then(value => this.formations = value);
+    this.formationService.getFormation().then(value => this.formations = value);
   }
 
 }
